@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gaming News aur Sarkari Naukri ki latest jankari, notifications aur official apply links.">
+  <title>GameSarkari - Gaming & Sarkari Naukri News</title>
+
+  <!-- Google AdSense: approval ke baad apna AdSense code yahan add karein -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_CLIENT_ID" crossorigin="anonymous"></script> -->
+
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:#f4f6f9;color:#17202a;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1100px,92%);margin:auto}
+    header{background:#111827;color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #0002}
+    .nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{font-size:23px;font-weight:800}.logo span{color:#22c55e}
+    nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav a{font-weight:600;color:#e5e7eb}
+    nav a:hover{color:#22c55e}
+    .hero{background:linear-gradient(135deg,#111827,#1d4ed8);color:#fff;padding:55px 0}
+    .hero h1{font-size:clamp(30px,5vw,52px);margin-bottom:10px}
+    .hero p{font-size:18px;color:#dbeafe;max-width:700px}
+    .btn{display:inline-block;background:#22c55e;color:#06230f;padding:11px 18px;border-radius:8px;font-weight:800;margin-top:20px}
+    .ad{background:#fff;border:1px dashed #9ca3af;color:#6b7280;min-height:90px;display:flex;align-items:center;justify-content:center;margin:22px 0;border-radius:10px}
+    main{padding:28px 0}.grid{display:grid;grid-template-columns:2fr 1fr;gap:24px}
+    .section-title{font-size:26px;margin-bottom:14px}
+    .cards{display:grid;gap:15px}
+    .card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 3px 14px #0000000d;border:1px solid #e5e7eb}
+    .tag{display:inline-block;background:#e0f2fe;color:#075985;border-radius:20px;padding:3px 10px;font-size:12px;font-weight:700;margin-bottom:8px}
+    .card h3{font-size:19px;margin-bottom:6px}.card p{color:#4b5563}
+    .apply{display:inline-block;margin-top:12px;background:#2563eb;color:white;padding:8px 13px;border-radius:7px;font-weight:700}
+    .apply:hover{background:#1d4ed8}
+    aside .card{margin-bottom:15px}
+    .search{display:flex;margin-bottom:20px}.search input{width:100%;padding:13px;border:1px solid #d1d5db;border-radius:8px 0 0 8px;font-size:15px}.search button{border:0;background:#2563eb;color:#fff;padding:0 18px;border-radius:0 8px 8px 0}
+    footer{background:#111827;color:#cbd5e1;padding:30px 0;margin-top:30px;text-align:center}
+    footer a{color:#60a5fa}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column;padding:12px 0}nav{gap:12px}.hero{padding:40px 0}}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">Game<span>Sarkari</span></a>
+    <nav>
+      <a href="#gaming">Gaming</a>
+      <a href="#jobs">Sarkari Jobs</a>
+      <a href="#links">Official Links</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Gaming News + Sarkari Naukri</h1>
+    <p>Gaming ki latest news, updates aur Sarkari naukri notifications ek hi jagah.</p>
+    <a class="btn" href="#jobs">Latest Jobs Dekhein</a>
+  </div>
+</section>
+
+<div class="container">
+  <!-- Ad slot: AdSense approval ke baad apna ad unit code yahan paste karein -->
+  <div class="ad">Advertisement</div>
+</div>
+
+<main class="container">
+  <div class="search">
+    <input id="searchBox" type="search" placeholder="Gaming news ya job search karein...">
+    <button onclick="searchCards()">Search</button>
+  </div>
+
+  <div class="grid">
+    <section>
+      <h2 class="section-title" id="gaming">🎮 Gaming News</h2>
+      <div class="cards" id="gamingCards">
+        <article class="card searchable">
+          <span class="tag">Gaming</span>
+          <h3>Latest Gaming Updates</h3>
+          <p>New games, updates, events aur gaming industry ki important news yahan publish karein.</p>
+          <a class="apply" href="#" onclick="return false">Read More</a>
+        </article>
+        <article class="card searchable">
+          <span class="tag">Esports</span>
+          <h3>Esports Tournament News</h3>
+          <p>Popular esports tournaments aur gaming competitions ke latest updates.</p>
+          <a class="apply" href="#" onclick="return false">Read More</a>
+        </article>
+        <article class="card searchable">
+          <span class="tag">Updates</span>
+          <h3>Game Update & Release News</h3>
+          <p>Upcoming releases, patches aur major game updates ki information.</p>
+          <a class="apply" href="#" onclick="return false">Read More</a>
+        </article>
+      </div>
+
+      <div class="ad">Advertisement</div>
+
+      <h2 class="section-title" id="jobs">🏛️ Sarkari Naukri</h2>
+      <div class="cards" id="jobCards">
+        <article class="card searchable">
+          <span class="tag">Government Job</span>
+          <h3>Latest Sarkari Job Notification</h3>
+          <p>Post, qualification, age limit, important dates aur vacancy details yahan add karein.</p>
+          <a class="apply" href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC Official Website</a>
+        </article>
+        <article class="card searchable">
+          <span class="tag">Railway</span>
+          <h3>Railway Recruitment Updates</h3>
+          <p>Railway recruitment ki official notifications aur application information.</p>
+          <a class="apply" href="https://www.rrbapply.gov.in/" target="_blank" rel="noopener">Official Apply Site</a>
+        </article>
+        <article class="card searchable">
+          <span class="tag">UPSC</span>
+          <h3>UPSC Recruitment & Exams</h3>
+          <p>UPSC exams aur recruitment ke liye official information yahan se dekhein.</p>
+          <a class="apply" href="https://upsc.gov.in/" target="_blank" rel="noopener">UPSC Official Site</a>
+        </article>
+      </div>
+    </section>
+
+    <aside id="links">
+      <div class="card">
+        <h3>🔗 Official Job Links</h3>
+        <p><a class="apply" href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC</a></p>
+        <p><a class="apply" href="https://upsc.gov.in/" target="_blank" rel="noopener">UPSC</a></p>
+        <p><a class="apply" href="https://www.rrbapply.gov.in/" target="_blank" rel="noopener">Railway</a></p>
+        <p><a class="apply" href="https://www.ibps.in/" target="_blank" rel="noopener">IBPS</a></p>
+      </div>
+
+      <div class="ad">Advertisement</div>
+
+      <div class="card">
+        <h3>📌 Important</h3>
+        <p>Job apply karne se pehle hamesha official notification aur official website par details verify karein.</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer id="contact">
+  <div class="container">
+    <p>© 2026 GameSarkari. All Rights Reserved.</p>
+    <p>Gaming News • Sarkari Naukri • Official Links</p>
+  </div>
+</footer>
+
+<script>
+function searchCards(){
+  const q=document.getElementById('searchBox').value.toLowerCase().trim();
+  document.querySelectorAll('.searchable').forEach(card=>{
+    card.style.display=(!q || card.innerText.toLowerCase().includes(q))?'block':'none';
+  });
+}
+document.getElementById('searchBox').addEventListener('keyup', searchCards);
+</script>
+
+</body>
+</html>
